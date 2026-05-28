@@ -1,0 +1,434 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "date": "2002-11-05",
+      "title": "我来到了这个世界",
+      "description": "在深圳的一个夏天出生，据说那天晚霞特别美，大概这就注定了我是一个浪漫的人吧。",
+      "category": "life",
+      "tags": [
+        "出生",
+        "北京",
+        "家庭"
+      ],
+      "icon": "baby",
+      "location": "深圳",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 2,
+      "date": "2006-09-01",
+      "title": "第一天上学",
+      "description": "背着比自己还大的书包走进校门，妈妈在校门口站了很久。那时候不知道，这条路一走就是16年。",
+      "category": "education",
+      "tags": [
+        "小学",
+        "成长"
+      ],
+      "icon": "school",
+      "location": "北京海淀",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 3,
+      "date": "2012-06-20",
+      "title": "第一次坐飞机",
+      "description": "小学毕业那年暑假，爸妈带我去了云南。第一次看见云层之上的世界，从此爱上了旅行。",
+      "category": "travel",
+      "tags": [
+        "云南",
+        "旅行",
+        "第一次"
+      ],
+      "icon": "plane",
+      "location": "云南大理",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 4,
+      "date": "2015-09-01",
+      "title": "初中编程启蒙",
+      "description": "信息技术课上第一次接触了Python，用turtle画了一个五角星。那一刻觉得代码像魔法一样神奇。",
+      "category": "education",
+      "tags": [
+        "编程",
+        "Python",
+        "启蒙"
+      ],
+      "icon": "code",
+      "location": "北京",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 5,
+      "date": "2018-06-08",
+      "title": "中考结束",
+      "description": "考完最后一科出来，和同学们去吃了火锅。那天的快乐很简单——终于可以睡到自然醒了。",
+      "category": "life",
+      "tags": [
+        "中考",
+        "青春",
+        "朋友"
+      ],
+      "icon": "celebration",
+      "location": "北京",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 6,
+      "date": "2018-09-01",
+      "title": "高中第一天",
+      "description": "进了重点高中，发现身边的同学都是学霸。压力很大，但也第一次感受到了什么叫「比你优秀的人比你还努力」。",
+      "category": "education",
+      "tags": [
+        "高中",
+        "成长"
+      ],
+      "icon": "school",
+      "location": "北京海淀",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 7,
+      "date": "2019-07-15",
+      "title": "第一次写网站",
+      "description": "暑假自学了HTML/CSS/JS，给自己做了一个博客。虽然现在看来丑得不行，但当时兴奋得睡不着觉。",
+      "category": "project",
+      "tags": [
+        "Web开发",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "icon": "globe",
+      "location": "北京",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 8,
+      "date": "2020-01-20",
+      "title": "参加信息学竞赛",
+      "description": "第一次参加NOIP，虽然只拿了省二等奖，但认识了很多志同道合的朋友，也坚定了走技术路线的决心。",
+      "category": "achievement",
+      "tags": [
+        "竞赛",
+        "NOIP",
+        "算法"
+      ],
+      "icon": "trophy",
+      "location": "北京",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 9,
+      "date": "2020-07-10",
+      "title": "日本之旅",
+      "description": "和爸妈去了日本，秋叶原、浅草寺、镰仓高校前站。原来动漫里的场景都是真实存在的。",
+      "category": "travel",
+      "tags": [
+        "日本",
+        "东京",
+        "动漫",
+        "家庭"
+      ],
+      "icon": "plane",
+      "location": "日本东京",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 10,
+      "date": "2021-06-07",
+      "title": "高考",
+      "description": "两天四场考试，十几年学生时代的句号。数学最后一题没做出来，但英语超常发挥。人生就是这样，有失有得。",
+      "category": "life",
+      "tags": [
+        "高考",
+        "青春",
+        "人生转折"
+      ],
+      "icon": "star",
+      "location": "北京",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 11,
+      "date": "2021-08-20",
+      "title": "拿到大学录取通知书",
+      "description": "被计算机科学与技术专业录取。拿到通知书的那一刻，觉得所有的努力都值得了。",
+      "category": "achievement",
+      "tags": [
+        "大学",
+        "计算机科学",
+        "名校"
+      ],
+      "icon": "trophy",
+      "location": "北京",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 12,
+      "date": "2021-09-15",
+      "title": "大学第一天",
+      "description": "搬进宿舍，认识了三个来自不同地方的室友。后来他们成了我大学四年最好的朋友。",
+      "category": "education",
+      "tags": [
+        "大学",
+        "室友",
+        "友谊"
+      ],
+      "icon": "school",
+      "location": "北京海淀",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 13,
+      "date": "2022-03-01",
+      "title": "疫情期间的线上学期",
+      "description": "在家上了整整一个学期的网课。虽然无聊，但也因此有了大量时间自学编程，技术突飞猛进。",
+      "category": "education",
+      "tags": [
+        "疫情",
+        "网课",
+        "自学"
+      ],
+      "icon": "laptop",
+      "location": "北京",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 14,
+      "date": "2022-06-10",
+      "title": "第一个开源项目",
+      "description": "在GitHub上发布了第一个开源项目——一个Python爬虫工具。收获了127个Star，激动了一整天。",
+      "category": "project",
+      "tags": [
+        "开源",
+        "GitHub",
+        "Python"
+      ],
+      "icon": "github",
+      "location": "北京",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 15,
+      "date": "2022-10-01",
+      "title": "国庆青海骑行",
+      "description": "和朋友环青海湖骑行了360公里，四天三夜。经历了爆胎、暴雨、高原反应，也看到了最美的星空。",
+      "category": "travel",
+      "tags": [
+        "骑行",
+        "青海湖",
+        "户外"
+      ],
+      "icon": "bike",
+      "location": "青海湖",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 16,
+      "date": "2023-03-15",
+      "title": "第一次实习",
+      "description": "在字节跳动做后端开发实习生。第一次接触到了真正的工业级代码，学会了GitFlow、Code Review、写技术文档。",
+      "category": "project",
+      "tags": [
+        "实习",
+        "字节跳动",
+        "后端"
+      ],
+      "icon": "briefcase",
+      "location": "北京中关村",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 17,
+      "date": "2023-09-01",
+      "title": "成为编程社社长",
+      "description": "接手了学校的编程社团，从20人发展到200+人。组织了第一场校内黑客马拉松，48小时不眠不休写代码。",
+      "category": "achievement",
+      "tags": [
+        "社团",
+        "领导力",
+        "黑客马拉松"
+      ],
+      "icon": "users",
+      "location": "北京",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 18,
+      "date": "2024-01-10",
+      "title": "获全国大学生计算机设计大赛一等奖",
+      "description": "做了一个基于AI的诗词生成器，评委说「技术与人文的结合让人眼前一亮」。第一次觉得代码可以这么有温度。",
+      "category": "achievement",
+      "tags": [
+        "比赛",
+        "AI",
+        "诗词",
+        "一等奖"
+      ],
+      "icon": "trophy",
+      "location": "北京",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 19,
+      "date": "2024-07-20",
+      "title": "西藏之旅",
+      "description": "一个人背包去了西藏。在纳木错的星空下，突然觉得人类的烦恼在宇宙面前真的不值一提。",
+      "category": "travel",
+      "tags": [
+        "西藏",
+        "独自旅行",
+        "星空"
+      ],
+      "icon": "mountain",
+      "location": "西藏拉萨",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 20,
+      "date": "2024-09-01",
+      "title": "开始写技术博客",
+      "description": "在个人博客上开始系统性地写技术文章，一年写了40篇，累计阅读量突破50万。",
+      "category": "project",
+      "tags": [
+        "博客",
+        "写作",
+        "技术分享"
+      ],
+      "icon": "pen",
+      "location": "北京",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 21,
+      "date": "2025-03-01",
+      "title": "第二段实习 · 美团",
+      "description": "在美团做全栈开发，参与了订单系统的重构。学会了在高并发场景下写代码。",
+      "category": "project",
+      "tags": [
+        "实习",
+        "美团",
+        "全栈",
+        "高并发"
+      ],
+      "icon": "briefcase",
+      "location": "北京望京",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 22,
+      "date": "2025-06-10",
+      "title": "一个人去了冰岛",
+      "description": "存了一年的钱，一个人去了冰岛。看到了极光，泡了蓝湖温泉，在黑沙滩上站了很久。世界太大了，我还要去看看。",
+      "category": "travel",
+      "tags": [
+        "冰岛",
+        "极光",
+        "独自旅行"
+      ],
+      "icon": "mountain",
+      "location": "冰岛雷克雅未克",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 23,
+      "date": "2025-09-01",
+      "title": "做了一个AI应用",
+      "description": "基于GPT API做了一个个人知识管理工具，可以自动整理笔记、生成摘要、关联知识点。身边的朋友用了都说好。",
+      "category": "project",
+      "tags": [
+        "AI",
+        "GPT",
+        "知识管理"
+      ],
+      "icon": "robot",
+      "location": "北京",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 24,
+      "date": "2026-01-01",
+      "title": "新年决定",
+      "description": "在跨年夜的烟花下给自己定了三个目标：出国深造、做一个有影响力的产品、去三个没去过的地方旅行。",
+      "category": "life",
+      "tags": [
+        "新年",
+        "目标",
+        "未来"
+      ],
+      "icon": "star",
+      "location": "北京",
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": 25,
+      "date": "2026-03-15",
+      "title": "拿到留学offer",
+      "description": "收到了三所学校的offer，最终选择了苏黎世联邦理工的CS硕士项目。新年目标第一个，完成！",
+      "category": "life",
+      "tags": [
+        "生日",
+        "回顾",
+        "未来"
+      ],
+      "icon": "heart",
+      "location": "深圳",
+      "featured": true,
+      "image": ""
+    },
+    {
+      "id": 26,
+      "date": "2026-05-28",
+      "title": "今天 · 24岁",
+      "description": "建了这个时间线网站，回望过去，才发现自己的人生比想象中精彩。未来还有很多空白等着我去填满。而我相信，最好的故事永远在下一页。",
+      "category": "achievement",
+      "tags": [
+        "留学",
+        "offer",
+        "ETH",
+        "目标达成"
+      ],
+      "icon": "trophy",
+      "location": "深圳",
+      "featured": false,
+      "image": ""
+    }
+  ],
+  "profile": {
+    "name": "张星河",
+    "bio": "程序员 · 旅行者 · 生活家",
+    "avatar": "",
+    "cover": "",
+    "social": {
+      "github": "https://github.com",
+      "blog": "https://example.com",
+      "email": "hello@example.com"
+    }
+  }
+}

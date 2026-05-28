@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>管理后台 · 时间线博物馆</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans SC', system-ui, sans-serif;
+    background: #09090b;
+    color: #eeece6;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  .login-box {
+    width: 380px; max-width: 92vw;
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 44px 36px;
+    backdrop-filter: blur(20px);
+  }
+  .login-box h1 {
+    font-size: 1.4rem; font-weight: 600; text-align: center; margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .login-box .sub {
+    text-align: center; font-size: 0.85rem; color: #8b8b82; margin-bottom: 36px;
+  }
+  .field { margin-bottom: 20px; }
+  .field label {
+    display: block; font-size: 0.8rem; color: #8b8b82; margin-bottom: 6px;
+    letter-spacing: 0.03em;
+  }
+  .field input {
+    width: 100%; padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.03);
+    color: #eeece6; font-size: 0.95rem; font-family: inherit;
+    outline: none; transition: 0.2s;
+  }
+  .field input:focus {
+    border-color: rgba(212,165,116,0.4);
+    background: rgba(255,255,255,0.05);
+  }
+  .btn {
+    width: 100%; padding: 12px;
+    border-radius: 12px; border: none;
+    background: linear-gradient(120deg, #d4a574, #c47a8b);
+    color: #1c1c18; font-size: 0.95rem; font-weight: 600;
+    cursor: pointer; font-family: inherit;
+    transition: opacity 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .btn:hover { opacity: 0.85; }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .error {
+    text-align: center; color: #c47a8b; font-size: 0.82rem; margin-top: 16px;
+    min-height: 20px;
+  }
+  .back-link {
+    display: block; text-align: center; margin-top: 24px;
+    font-size: 0.8rem; color: #5c5c56; text-decoration: none; transition: 0.2s;
+  }
+  .back-link:hover { color: #8b8b82; }
+</style>
+</head>
+<body>
+<div class="login-box">
+  <h1>🔐 管理后台</h1>
+  <p class="sub">时间线博物馆</p>
+  <form id="login-form">
+    <div class="field">
+      <label for="password">管理员密码</label>
+      <input type="password" id="password" name="password" placeholder="请输入密码" autofocus autocomplete="current-password">
+    </div>
+    <button type="submit" class="btn" id="submit-btn">登 入</button>
+    <p class="error" id="error"></p>
+  </form>
+  <a href="/" class="back-link">← 返回前台</a>
+</div>
+
+<script>
+document.getElementById('login-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+  const err = document.getElementById('error');
+  btn.disabled = true;
+  btn.textContent = '验证中...';
+  err.textContent = '';
+
+  try {
+    const form = new FormData();
+    form.append('password', document.getElementById('password').value);
+    const res = await fetch('/api/admin/login', { method: 'POST', body: form });
+    const data = await res.json();
+    if (res.ok) {
+      window.location.href = '/admin/dashboard';
+    } else {
+      err.textContent = data.detail || '密码错误';
+    }
+  } catch (ex) {
+    err.textContent = '网络错误，请重试';
+  }
+  btn.disabled = false;
+  btn.textContent = '登 入';
+});
+</script>
+</body>
+</html>

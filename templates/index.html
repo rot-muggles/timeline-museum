@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星河时间线 | 我的人生博物馆</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<!-- Canvas for Three.js particles -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursor-trail"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">✦ 星河</a>
+    <div class="nav-links">
+      <a href="#timeline" class="nav-link">时间线</a>
+      <a href="#stats" class="nav-link">统计</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Progress bar -->
+<div class="progress-bar" id="progress-bar"></div>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-avatar" id="hero-avatar"></div>
+    <h1 class="hero-name" id="hero-name"></h1>
+    <p class="hero-bio" id="hero-bio"></p>
+    <div class="hero-social" id="hero-social"></div>
+    <div class="hero-scroll-hint">
+      <span id="hero-scroll-hint">向下滚动，探索我的人生</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </div>
+  <div class="hero-gradient"></div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section" id="stats">
+  <div class="stats-grid" id="stats-grid"></div>
+</section>
+
+<!-- Filter Bar -->
+<section class="filter-section" id="timeline">
+  <div class="filter-bar">
+    <div class="filter-categories" id="filter-categories">
+      <button class="filter-chip active" data-category="all">全部</button>
+      <button class="filter-chip" data-category="life">🧬 人生</button>
+      <button class="filter-chip" data-category="education">📚 学业</button>
+      <button class="filter-chip" data-category="project">💻 项目</button>
+      <button class="filter-chip" data-category="travel">✈️ 旅行</button>
+      <button class="filter-chip" data-category="achievement">🏆 成就</button>
+    </div>
+    <div class="filter-controls">
+      <div class="search-box">
+        <input type="text" class="search-input" id="search-input" placeholder="搜索事件...">
+        <span class="search-icon">🔍</span>
+      </div>
+      <div class="zoom-controls">
+        <button class="zoom-btn" id="zoom-out" title="缩小">−</button>
+        <span class="zoom-label" id="zoom-label">100%</span>
+        <button class="zoom-btn" id="zoom-in" title="放大">+</button>
+      </div>
+      <button class="view-toggle" id="view-toggle" title="切换视图">
+        <span class="view-icon">↕</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline Section -->
+<section class="timeline-section">
+  <div class="timeline-container" id="timeline-container">
+    <div class="timeline-line" id="timeline-line">
+      <div class="timeline-glow"></div>
+    </div>
+    <div class="timeline-events" id="timeline-events"></div>
+    <div class="timeline-loading" id="timeline-loading">
+      <div class="loader"></div>
+    </div>
+    <div class="timeline-empty" id="timeline-empty" style="display:none;">
+      <span class="empty-icon">🔍</span>
+      <p>没有找到匹配的事件</p>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-backdrop"></div>
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightbox-close">✕</button>
+    <div class="lightbox-body" id="lightbox-body"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <p class="footer-quote" id="footer-quote"></p>
+    <div class="footer-links">
+      <a href="#hero" class="footer-link">回到顶部 ↑</a>
+    </div>
+    <p class="footer-copy" id="footer-copy"></p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="/static/js/effects.js"></script>
+<script src="/static/js/timeline.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
